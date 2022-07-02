@@ -1,5 +1,5 @@
 import SearchBar from "./Searchbar"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import MovieResults from "./MovieResults"
 import Container from "react-bootstrap/Container"
 
@@ -11,6 +11,7 @@ function SearchPage() {
       .then((res) => res.json())
       .then((data) => {
         setMoviesList(data.Search)
+        console.log(data.Search)
       })
   }
 
