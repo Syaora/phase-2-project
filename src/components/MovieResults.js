@@ -1,14 +1,18 @@
 import MovieCard from "./MovieCard"
+import Row from "react-bootstrap/Row"
+import Container from 'react-bootstrap/Container'
 
-function MovieResults({ moviesList }){
+function MovieResults({ moviesList }) {
   return (
-    <>
-      {
-        moviesList.map((movie) => {
-          return <MovieCard key={movie.imdbID} movie={movie} /> 
-        })
-      }
-    </>
+    <Container>
+      <Row sm={3} md="auto">
+        {
+          moviesList.map((movie) => {
+            return <MovieCard key={movie.imdbID} movie={movie} />
+          })
+        }
+      </Row>
+    </Container>
   )
 }
 
