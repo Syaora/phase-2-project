@@ -7,7 +7,7 @@ function SearchPage() {
   const [moviesList, setMoviesList] = useState([])
 
   function onMoviesList(keyword) {
-    fetch(`http://www.omdbapi.com/?apikey=${process.env.KEY}=${keyword}`)
+    fetch(`http://www.omdbapi.com/?apikey=${process.env.KEY}=${keyword}&type=movie`)
       .then((res) => res.json())
       .then((data) => {
         setMoviesList(data.Search)

@@ -19,15 +19,7 @@ function SearchBar({ onMoviesList }) {
 
   return (
     <>
-      {showError ? (
-        <Alert variant="danger" onClose={() => setShowError(false)} dismissible>
-          <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
-          <p>
-            Please enter a movie name and try again.
-          </p>
-        </Alert>
-      ) : null}
-      <InputGroup className="mb-3">
+      <InputGroup style={{marginTop: "110px", marginBottom: "30px"}} className="mb-3">
         <FormControl
           placeholder="Enter movie title..."
           aria-describedby="basic-addon2"
@@ -38,6 +30,14 @@ function SearchBar({ onMoviesList }) {
           Search
         </Button>
       </InputGroup>
+      {showError ? (
+        <Alert variant="danger" onClose={() => setShowError(false)} dismissible>
+          <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
+          <p>
+            Please enter a movie name and try again.
+          </p>
+        </Alert>
+      ) : null}
     </>
   )
 }

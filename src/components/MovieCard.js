@@ -7,7 +7,7 @@ function MovieCard({ movie }) {
         <Card.Img style={{ minHeight: "421px", maxHeight: "421px"}} variant="top" src={movie.Poster} />
         <Card.Body>
           <Card.Title>{movie.Title}</Card.Title>
-          <Button variant="primary">Read More</Button>
+            <Button href={`/${movie.imdbID}`} variant="primary">Read More</Button>
         </Card.Body>
       </Card>
     </Col>
