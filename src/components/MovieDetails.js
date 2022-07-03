@@ -8,10 +8,14 @@ function MovieDetails({ watchList, onStatusChange }){
   const params = useParams()
 
   useEffect(() => {
+    getMovieDetails()
+  }, [])
+
+  function getMovieDetails(){
     fetch(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_SECRET}&i=${params.movieId}&plot=full`)
       .then((res) => res.json())
       .then((data) => setMovieDetails(data))
-  }, [])
+  }
 
   function handleStatusChange(event){
     const newValue = event.target.value
@@ -32,7 +36,7 @@ function MovieDetails({ watchList, onStatusChange }){
           <h2>{movieDetails.Title}</h2>
           <hr />
           <p><b>Status: </b>
-            <select onChange={handleStatusChange} name="status">
+            <select onChange={handleStatusChange} defaultValue={status} name="status">
               <option value="None">Add to List</option>
               <option value="Completed">Completed</option>
               <option value="Plan">Plan to Watch</option>

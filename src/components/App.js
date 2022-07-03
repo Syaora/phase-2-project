@@ -29,20 +29,30 @@ function App() {
   }, [])
 
   function onStatusChange(movie, status) {
-    const newData = {...movie, "id": movie.imdbID, "status": status}
-    console.log("test", newData)
+    const newData = {...movie, "status": status}
+    const foundMovie = watchList.filter((searchMovie) => searchMovie.imdbID === movie.imdbID)
 
-    fetch(`http://localhost:8000/Bob/${movie.imdbID}`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(newData)
-    })
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);
+    if (foundMovie.length > 0){
+      fetch(`http://localhost:8000/Bob/${foundMovie[0].id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newData)
       })
+        .then((res) => res.json())
+        .then((data) => console.log(data))
+    } else {
+      fetch(`http://localhost:8000/Bob/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newData)
+      })
+        .then((res) => res.json())
+        .then((data) => setWatchList([{...watchList, newData}]))
+    }
   }
 
   return (
@@ -57,7 +67,7 @@ function App() {
         </Container>
       </Navbar>
       <Routes>
-        <Route exact path="/" element={<SearchPage />} />
+        <Route exact path="/" element={<SearchPage watchList={watchList}/>} />
         <Route path="/:movieId" element={<MovieDetails watchList={watchList} onStatusChange={onStatusChange} />} />
         <Route path="myList" element={<UsersList watchList={watchList} />} />
       </Routes>

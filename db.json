@@ -72,6 +72,78 @@
       "totalSeasons": "6",
       "Response": "True",
       "status": "Plan"
+    },
+    {
+      "Title": "Test Pilot",
+      "Year": "1938",
+      "Rated": "Passed",
+      "Released": "22 Apr 1938",
+      "Runtime": "119 min",
+      "Genre": "Drama, Romance",
+      "Director": "Victor Fleming",
+      "Writer": "Vincent Lawrence, Waldemar Young, Frank Wead",
+      "Actors": "Clark Gable, Myrna Loy, Spencer Tracy",
+      "Plot": "Jim Lane is a test pilot, whose professional life is dangerous, and whose personal life compensates for that danger by fast living and recklessness. As such, he lives from paycheck to paycheck, and is often in debt, but knows his lucrative job will eventually get him out of those debts. On a coast to coast record attempt speed flight, Jim's plane, the Drake Bullet (named after the company's owner), hits some mechanical problems and Jim is forced to make an emergency landing on a farmer's field in Kansas. The farm belongs to the Barton family, whose straight talking daughter, Ann Barton, falls for Jim, and visa versa. They impulsively decide to get married and live in New York. Jim's sidekick and mechanic, \"Gunner\" Morris, doesn't know if Jim and marriage go hand in hand, both because of the type of person he is and his profession. Ann too soon learns that she plays second fiddle to Jim's work, she referring to the sky as Jim's mistress. Ann also truly comes to understand the dangers of Jim's work, he who is often required to push the planes beyond their physical limits. With each flight, Ann fears that she will become a widow, as she has seen it before with the wives of Jim's colleagues. Can Jim and Ann's marriage survive the many pressures stemming from Jim's life as a test pilot?",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "Nominated for 3 Oscars. 4 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNzQ2MmU5MGMtYWFhOC00YmY0LWE3NDctM2RkYTdiMDc3Y2JmXkEyXkFqcGdeQXVyMzg1ODEwNQ@@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.8/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "75%"
+        }
+      ],
+      "Metascore": "N/A",
+      "imdbRating": "6.8",
+      "imdbVotes": "2,391",
+      "imdbID": "tt0030848",
+      "Type": "movie",
+      "DVD": "13 May 2014",
+      "BoxOffice": "N/A",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "id": "tt0030848",
+      "status": "Completed"
+    },
+    {
+      "Title": "Avatar Spirits",
+      "Year": "2010",
+      "Rated": "N/A",
+      "Released": "22 Jun 2010",
+      "Runtime": "32 min",
+      "Genre": "Documentary, Short",
+      "Director": "Kurt Mattila",
+      "Writer": "Charles Olivier",
+      "Actors": "Bryan Konietzko, Michael Dante DiMartino, Benjamin Wynn",
+      "Plot": "A documentary about the making of the TV show \"Avatar: The Last Airbender\". Creators Bryan Konietzko and Michael Dante DiMartino discuss how they came up with the idea for the show and the process behind making an episode.",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "N/A",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMzQ4MDMxNjExNl5BMl5BanBnXkFtZTgwOTYzODI5NTE@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.5/10"
+        }
+      ],
+      "Metascore": "N/A",
+      "imdbRating": "8.5",
+      "imdbVotes": "144",
+      "imdbID": "tt1900832",
+      "Type": "movie",
+      "DVD": "N/A",
+      "BoxOffice": "N/A",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "status": "Plan",
+      "id": "o86AlrX"
     }
   ]
 }
