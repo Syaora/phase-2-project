@@ -23,7 +23,7 @@ function App() {
   // }, [])
 
   useEffect(() => {
-    fetch(`http://localhost:8000/Bob/`)
+    fetch(`https://backend-project-2.herokuapp.com/Bob`)
       .then((res) => res.json())
       .then((data) => setWatchList(data))
   }, [])
@@ -33,7 +33,7 @@ function App() {
     const foundMovie = watchList.filter((searchMovie) => searchMovie.imdbID === movie.imdbID)
 
     if (foundMovie.length > 0){
-      fetch(`http://localhost:8000/Bob/${foundMovie[0].id}`, {
+      fetch(`https://backend-project-2.herokuapp.com/Bob/${foundMovie[0].id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json"
@@ -43,7 +43,7 @@ function App() {
         .then((res) => res.json())
         .then((data) => console.log(data))
     } else {
-      fetch(`http://localhost:8000/Bob/`, {
+      fetch(`https://backend-project-2.herokuapp.com/Bob/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
