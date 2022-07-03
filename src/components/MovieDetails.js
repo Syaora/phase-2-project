@@ -2,7 +2,8 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { Container, Row, Col } from "react-bootstrap"
 
-function MovieDetails({ movie }){
+function MovieDetails({ watchList, onStatusChange }){
+  const [status, setStatus] = useState("None")
   const [movieDetails, setMovieDetails] = useState([])
   const params = useParams()
 
@@ -11,6 +12,15 @@ function MovieDetails({ movie }){
       .then((res) => res.json())
       .then((data) => setMovieDetails(data))
   }, [])
+
+  function handleStatusChange(event){
+    const newValue = event.target.value
+    setStatus(newValue)
+    
+    if (newValue !== "None"){
+      onStatusChange(movieDetails, newValue)
+    }
+  }
 
   return (
     <Container className="mt-5">
@@ -22,7 +32,7 @@ function MovieDetails({ movie }){
           <h2>{movieDetails.Title}</h2>
           <hr />
           <p><b>Status: </b>
-            <select name="status">
+            <select onChange={handleStatusChange} name="status">
               <option value="None">Add to List</option>
               <option value="Completed">Completed</option>
               <option value="Plan">Plan to Watch</option>

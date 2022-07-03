@@ -1,0 +1,77 @@
+{
+  "Bob": [
+    {
+      "Title": "Batman",
+      "Year": "1989",
+      "Rated": "PG-13",
+      "Released": "23 Jun 1989",
+      "Runtime": "126 min",
+      "Genre": "Action, Adventure",
+      "Director": "Tim Burton",
+      "Writer": "Bob Kane, Sam Hamm, Warren Skaaren",
+      "Actors": "Michael Keaton, Jack Nicholson, Kim Basinger",
+      "Plot": "Gotham City. Crime boss Carl Grissom (Jack Palance) effectively runs the town but there's a new crime fighter in town - Batman (Michael Keaton). Grissom's right-hand man is Jack Napier (Jack Nicholson), a brutal man who is not entirely sane... After falling out between the two Grissom has Napier set up with the Police and Napier falls to his apparent death in a vat of chemicals. However, he soon reappears as The Joker and starts a reign of terror in Gotham City. Meanwhile, reporter Vicki Vale (Kim Basinger) is in the city to do an article on Batman. She soon starts a relationship with Batman's everyday persona, billionaire Bruce Wayne.",
+      "Language": "English, French, Spanish",
+      "Country": "United States, United Kingdom",
+      "Awards": "Won 1 Oscar. 9 wins & 26 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZTM2NmZlOTEtYTI5NS00N2JjLWJkNzItMmZkNDBlYmQzNDA2XkEyXkFqcGdeQXVyMTAxODYyODI@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.5/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "72%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "69/100"
+        }
+      ],
+      "Metascore": "69",
+      "imdbRating": "7.5",
+      "imdbVotes": "372,332",
+      "imdbID": "tt0096895",
+      "id": "tt0096895",
+      "Type": "movie",
+      "DVD": "22 Aug 1997",
+      "BoxOffice": "$251,409,241",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "status": "Plan"
+    },
+    {
+      "Title": "My Hero",
+      "Year": "2000–2007",
+      "Rated": "N/A",
+      "Released": "04 Feb 2000",
+      "Runtime": "30 min",
+      "Genre": "Comedy, Fantasy, Romance",
+      "Director": "N/A",
+      "Writer": "Paul Mendelson",
+      "Actors": "Emily Joyce, Geraldine McNulty, Hugh Dennis",
+      "Plot": "Thermoman is a multiple-powered superhero who originates from the planet Ultron. In an attempt to do his best to fit in with life on earth, he creates the human alias of George Sunday.",
+      "Language": "English",
+      "Country": "United Kingdom",
+      "Awards": "N/A",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTc3NTI5MjA2MV5BMl5BanBnXkFtZTcwODEyMDk0MQ@@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.6/10"
+        }
+      ],
+      "Metascore": "N/A",
+      "imdbRating": "6.6",
+      "imdbVotes": "1,946",
+      "imdbID": "tt0233084",
+      "id": "tt0233084",
+      "Type": "series",
+      "totalSeasons": "6",
+      "Response": "True",
+      "status": "Plan"
+    }
+  ]
+}
