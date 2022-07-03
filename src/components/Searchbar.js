@@ -12,6 +12,7 @@ function SearchBar({ onMoviesList }) {
   function onSearch() {
     if (search.length > 0) {
       onMoviesList(search)
+      setSearch("")
     } else {
       setShowError(true)
     }

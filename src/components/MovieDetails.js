@@ -7,28 +7,34 @@ function MovieDetails({ movie }){
   const params = useParams()
 
   useEffect(() => {
-    fetch(`http://www.omdbapi.com/?apikey=${process.env.KEY}=${params.movieId}`)
+    fetch(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_SECRET}&i=${params.movieId}&plot=full`)
       .then((res) => res.json())
       .then((data) => setMovieDetails(data))
   }, [])
 
   return (
     <Container className="mt-5">
-      <h3>{movieDetails.Title}</h3>
       <Row>
         <Col xs="auto">
           <img src={movieDetails.Poster} />
         </Col>
-        <Col xs="4" md="5" lg="7" xxl="auto">
-          <ul style={{ "list-style": "none" }}>
-            <li>Released: {movieDetails.Released}</li>
-            <li>Runtime: {movieDetails.Runtime}</li>
-            <li>Genre: {movieDetails.Genre}</li>
-            <li>Director: {movieDetails.Director}</li>
-            <li>Writers: {movieDetails.Writer}</li>
-            <li>Actors: {movieDetails.Actors}</li>
-            <li>Plot: <br />{movieDetails.Plot}</li>
-          </ul>
+        <Col xs="4" md="5" lg="7">
+          <h2>{movieDetails.Title}</h2>
+          <hr />
+          <p><b>Status: </b>
+            <select name="status">
+              <option value="None">Add to List</option>
+              <option value="Completed">Completed</option>
+              <option value="Plan">Plan to Watch</option>
+            </select>
+          <br />
+          <b>Released</b>: {movieDetails.Released}<br />
+          <b>Runtime</b>: {movieDetails.Runtime}<br />
+          <b>Genre</b>: {movieDetails.Genre}<br />
+          <b>Director</b>: {movieDetails.Director}<br />
+          <b>Writers</b>: {movieDetails.Writer}<br />
+          <b>Actors</b>: {movieDetails.Actors}<br />
+          <b>Plot</b>: {movieDetails.Plot}</p>
         </Col>
       </Row>
     </Container>
