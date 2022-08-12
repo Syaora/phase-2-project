@@ -1,4 +1,4 @@
-# MyReadingList
+# MyWatchList
 > I have included a backend server at the following GitHub URL:
 https://github.com/Syaora/backend-project-2
 
